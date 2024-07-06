@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var cont = window.document.getElementById('area')
+        // Essa é a forma de chamar os eventos dentro do JavaScript
+        cont.addEventListener('click', clicar)
+        cont.addEventListener('mouseenter', entrar)
+        cont.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            
+            cont.innerText = 'Clicou!'
+            cont.style.background = 'pink'
+        }
+
+        function entrar(){
+            cont.innerText = 'entrou!'
+            cont.style.background = 'red'
+        }
+
+        function sair(){
+            cont.innerText = 'saiu!'
+            cont.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>

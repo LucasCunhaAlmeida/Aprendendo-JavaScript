@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+div#area{
+    font: normal 20px arial;
+    background-color: rgba(99, 52, 142, 0.556);
+    color: white;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
