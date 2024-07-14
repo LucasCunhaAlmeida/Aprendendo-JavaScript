@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            Ano de Nascimento: <input type="number" name="datanas" id="datanas">
+            <br>
+            Sexo:
+            <input type="radio" name="sexo" value="M" id="sexoM"> Masculino
+            <input type="radio" name="sexo" value="F" id="sexoF"> Feminino
+            <br>
+            <input type="button" value="Verificar" onclick="calcularIdade()">
+        </div>
+        <div id="foto">
+            <p id="msg">Preencha as informações acima</p>
+            <img id="img" src="" alt="">
+        </div>
+    </section>
+    <footer>
+        <p>Site criador por <a href="https://github.com/LucasCunhaAlmeida" target="_blank">Lucas Cunha Almeida</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
